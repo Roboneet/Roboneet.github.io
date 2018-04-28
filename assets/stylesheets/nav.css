@@ -1,0 +1,8 @@
+nav{
+	display: flex;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	justify-content: flex-end;
+	color: #0e35ef;
+}

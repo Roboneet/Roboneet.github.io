@@ -1,0 +1,45 @@
+
+@import url('https://fonts.googleapis.com/css?family=Space+Mono:700i');
+body{
+	overflow:auto;
+	font-family:"Space Mono", monospace;
+	background: #f7f7f7;
+	color: #757575;	
+}
+section{
+	max-width: 700px;
+	padding: 0 50px;
+	margin: 100px auto 0;
+	
+}
+
+h1{
+	color: #6b6969;
+	font-variant: small-caps;
+	padding-bottom: 25px;
+	border-bottom: 1px solid #777;
+}
+p{
+	color: #757575;
+	letter-spacing: -0.009em;
+	padding-top: 30px;
+}
+
+ul{
+ 	padding: 0;
+ 	margin-top: 30px;	
+}
+
+li{
+	list-style: none;
+	display:inline-block;
+	width: 50px;
+	height: 50px;
+	padding: 0 5px;
+}
+
+a, #github, #envelope{
+	height: inherit;
+	width: inherit;
+	fill: #6b6969;
+}
