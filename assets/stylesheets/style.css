@@ -3,24 +3,44 @@
 body{
 	overflow:auto;
 	font-family:"Space Mono", monospace;
-	background: #f7f7f7;
-	color: #757575;	
+	background: #e65a5a;
+	color: #111;	
 }
 section{
 	max-width: 700px;
-	padding: 0 50px;
+	padding: 50px;
 	margin: 100px auto 0;
-	
+	background: #fafafa;
+	border-radius: 3px;
+	background: linear-gradient(to bottom right, #eee, #fff, #fbfbfb);
+	position:relative;
+}
+section::before{
+	content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: 0;
+    height: 0;
+    border-width: 25px;
+    border-color: #000;
+    border-style: solid;
+    /* border-radius: 5px; */
+    border-top-color: #e65959;
+    border-left-color: #e65959;
+    border-bottom-right-radius: 3px;
 }
 
+
 h1{
-	color: #6b6969;
+	color: #111111;
 	font-variant: small-caps;
 	padding-bottom: 25px;
 	border-bottom: 1px solid #777;
 }
 p{
-	color: #757575;
+	color: #111111;
 	letter-spacing: -0.009em;
 	padding-top: 30px;
 }
@@ -41,5 +61,5 @@ li{
 a, #github, #envelope{
 	height: inherit;
 	width: inherit;
-	fill: #6b6969;
+	fill: #111111;
 }
