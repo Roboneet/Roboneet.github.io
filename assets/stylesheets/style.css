@@ -14,8 +14,9 @@ section{
 	border-radius: 3px;
 	background: linear-gradient(to bottom right, #eee, #fff, #fbfbfb);
 	position:relative;
+	box-shadow: 5px 5px 2px #9a3737;
 }
-section::before{
+section::before, section::after{
 	content: "";
     position: absolute;
     top: 0;
@@ -30,6 +31,25 @@ section::before{
     border-top-color: #e65959;
     border-left-color: #e65959;
     border-bottom-right-radius: 3px;
+}
+
+section::before{
+	transform: rotate3d(-1, 1, 0, 0deg);
+    box-shadow: 3px 3px 2px #d6d5d5;
+    backface-visibility: visible;
+    transition: all .4s linear;
+}
+
+section:hover:before{
+	transform: rotate3d(-1, 1, 0, 45deg);
+	box-shadow: 5px 5px 20px #aaa;
+}
+
+
+section::after{
+	border-color: transparent;
+    border-top-color: #e65959;
+    border-left-color: #e65959;
 }
 
 
