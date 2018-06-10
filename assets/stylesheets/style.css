@@ -64,22 +64,3 @@ p{
 	letter-spacing: -0.009em;
 	padding-top: 30px;
 }
-
-ul{
- 	padding: 0;
- 	margin-top: 30px;	
-}
-
-li{
-	list-style: none;
-	display:inline-block;
-	width: 50px;
-	height: 50px;
-	padding: 0 5px;
-}
-
-a, #github, #envelope{
-	height: inherit;
-	width: inherit;
-	fill: #111111;
-}

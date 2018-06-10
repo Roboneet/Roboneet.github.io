@@ -1,0 +1,19 @@
+.links{
+ 	padding: 0;
+ 	margin-top: 30px;	
+}
+
+.links li{
+	list-style: none;
+	display:inline-block;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	padding: 0 5px;
+}
+
+.links a, #github, #envelope{
+	height: inherit;
+	width: inherit;
+	fill: #111111;
+}

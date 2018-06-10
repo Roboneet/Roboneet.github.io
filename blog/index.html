@@ -1,27 +1,14 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
-	<title>Neethu Mariya Joy | Student</title>
-	<link rel="stylesheet" href="../assets/stylesheets/style.css">
-	<link rel="stylesheet" href="../assets/stylesheets/blog.css">
-	<link rel="stylesheet" href="../assets/stylesheets/nav.css">
-</head>
-<body>
-	<section>
-		<h1>Neethu Mariya Joy</h1>
-		<nav>
-			<a href="https://roboneet.github.io/"><li>Home</li></a>
-		</nav>
-		<ul>
-			<a href="posts/1.html">
+---
+title: Blog
+layout: default
+---
+<ul>
+	{% assign posts = site.data.blog %}
+	{% for post in posts %}
+		<a href="posts/{{post.post_id}}.html">
 			<article>
-				<h2>Hello, World!</h2>
-				<p>Demo entry</p>
+				<h3>{{post.name}}</h3>
 			</article>
-			</a>
-		</ul>
-
-	</section>
-</body>
+		</a>
+	{% endfor %}
+</ul>

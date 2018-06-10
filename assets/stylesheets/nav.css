@@ -5,4 +5,9 @@ nav{
 	        flex-direction: row;
 	justify-content: flex-end;
 	color: #111;
+	list-style: none;
+}
+
+.active{
+	color: #999;
 }

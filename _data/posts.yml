@@ -1,0 +1,19 @@
+1:
+  name: Summary of GSoC Week 1 and 2
+  points: 
+    - name: CPPN model to produce abstract patterns
+      subpoints: 
+        - Created the model in julia which generates images
+        - Added the model to julia website using FluxJS and created an animation (PR link)
+    - name: Environments for Reinforcement Learning Models
+      subpoints: 
+        - Added environments for breakout, pong, chess and go
+        - Created a common interface and a game controller to interact with these environments
+2:
+  name: Summary GSoC Week 3 and 4
+  points: 
+    - name: Interface for Style Transfer model
+    - name: Added support for Convolutional Layer and Maxpool to FluxJS
+    - name: Replaced the MNIST mlp model with a conv net
+
+
