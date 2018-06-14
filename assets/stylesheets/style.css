@@ -3,7 +3,7 @@
 body{
 	overflow:auto;
 	font-family:"Space Mono", monospace;
-	background: #e65a5a;
+	background: #616161;
 	color: #111;	
 }
 section{
@@ -14,7 +14,7 @@ section{
 	border-radius: 3px;
 	background: linear-gradient(to bottom right, #eee, #fff, #fbfbfb);
 	position:relative;
-	box-shadow: 5px 5px 2px #9a3737;
+	box-shadow: 5px 5px 2px #353535;
 }
 section::before, section::after{
 	content: "";
@@ -48,8 +48,8 @@ section:hover:before{
 
 section::after{
 	border-color: transparent;
-    border-top-color: #e65959;
-    border-left-color: #e65959;
+    border-top-color: #616161;
+    border-left-color: #616161;
 }
 
 
