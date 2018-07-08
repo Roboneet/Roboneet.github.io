@@ -10,7 +10,7 @@
         - Added environments for breakout, pong, chess and go
         - Created a common interface and a game controller to interact with these environments
 2:
-  name: Summary GSoC Week 3 and 4
+  name: Summary of GSoC Week 3 and 4
   points: 
     - name: Interface for Style Transfer model
     - name: Added support for Convolutional Layer and Maxpool to FluxJS
@@ -22,7 +22,7 @@
     - name: Fixed a few transpose issues with FluxJS
     - name: Added support for LSTM to FluxJS
 4:
-  name: Summary of GSoCs Week 7 and 8
+  name: Summary of GSoC Week 7 and 8
   points: 
     - name: Added support for BatchNorm to FluxJS
     - name: Worked on adding phonemes model to the website 
