@@ -2,12 +2,21 @@
 title: Blog
 layout: default
 ---
+
+<style>
+	ul{
+		display: flex;
+		-webkit-flex-direction: column-reverse;
+		    -ms-flex-direction: column-reverse;
+		        flex-direction: column-reverse;
+	}
+</style>
 <ul>
-	{% assign posts = site.data.blog %}
+	{% assign posts = site.data.posts %}
 	{% for post in posts %}
-		<a href="posts/{{post.post_id}}.html">
+		<a href="posts/{{post[0]}}.html">
 			<article>
-				<h3>{{post.name}}</h3>
+				<h3>{{post[1].name}}</h3>
 			</article>
 		</a>
 	{% endfor %}

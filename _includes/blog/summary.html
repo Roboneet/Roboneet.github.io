@@ -5,7 +5,13 @@
 	<ul class="main-list">
 
 		{% for point in include.post.points %}
-			<li>{{ point.name }}</li>
+			{% if point.link %}
+			<a href="{{point.link}}">
+			{% endif %}
+				<li>{{ point.name }}</li>
+			{% if point.link %}
+			</a>
+			{% endif %}
 			{% if point.subpoints %}
 				<ul class="sub-list">
 				{% for subpoint in point.subpoints %}

@@ -15,5 +15,20 @@
     - name: Interface for Style Transfer model
     - name: Added support for Convolutional Layer and Maxpool to FluxJS
     - name: Replaced the MNIST mlp model with a conv net
+3:
+  name: Summary of GSoC  Week 5 and 6
+  points:
+    - name: Added interface for AlphaGo repo
+    - name: Fixed a few transpose issues with FluxJS
+    - name: Added support for LSTM to FluxJS
+4:
+  name: Summary of GSoCs Week 7 and 8
+  points: 
+    - name: Added support for BatchNorm to FluxJS
+    - name: Worked on adding phonemes model to the website 
+      link: https://github.com/Roboneet/fluxml.github.io/tree/lstm
+    - name: Added a model to pong 
+      link: https://github.com/Roboneet/fluxml.github.io/commit/c3dc0de2742b81438bd7d62798fe93d69789bad9
+
 
 

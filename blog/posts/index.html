@@ -1,0 +1,8 @@
+---
+title: Post
+layout: default
+index: 2
+---
+
+{% assign post = site.data.posts[page.index] %}
+{% include blog/summary.html post=post%}

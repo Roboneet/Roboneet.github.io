@@ -4,3 +4,7 @@
 .sub-list li{
 	font-size: .8em;
 }
+
+a li{
+	color: #555;
+}
