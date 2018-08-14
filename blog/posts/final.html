@@ -6,6 +6,22 @@ layout: default
 	h4{
 		text-decoration: underline;
 	}
+	h3{
+	    padding: 20px 0;
+	    box-shadow: 0 3px 0px #ddd;
+	    border-bottom: 2px solid #777;
+	    position: relative;
+	}
+	h3:before{
+		content: '';
+	    position: absolute;
+	    width: 0;
+	    height: 0;
+	    border: 4px solid #777;
+	    border-radius: 50%;
+	    bottom: -2px;
+	    right: -4px;
+	}
 	code{
 		background: #f3f3f3;
 	    padding: 5px;
