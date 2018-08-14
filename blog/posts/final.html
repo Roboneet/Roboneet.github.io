@@ -1,0 +1,136 @@
+---
+layout: default
+---
+
+<style>
+	h4{
+		text-decoration: underline;
+	}
+	code{
+		background: #f3f3f3;
+	    padding: 5px;
+	    border-radius: 3px;
+	}
+	a{
+		font-weight: 600;
+	}
+
+	.images ul{
+		display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    list-style: none;
+	    padding: 0;
+	    flex-wrap: wrap
+	}
+
+	.images li{
+		margin: 10px;
+	}
+
+	.images img{
+		width: 100px;
+	}
+</style>
+
+<h2>Final Report</h2>
+<p>
+This is the report about my GSOC project done during the summer of 2018. My project was to set up interactive machine learning demos of Flux.jl on a webpage. This is done in 3 steps:
+<ol>
+	<li>Create a trained Flux model</li>
+	<li>Convert Flux model into Javascript using FluxJS.jl</li>
+	<li>Create an interface and load the model on the webpage</li>
+</ol>
+The models implemented are put up on <a href="http://fluxml.ai/">the Flux website</a>.
+</p>
+
+<h3 id="a">Web Demos for Flux</h3>
+
+<article>
+<h4>CPPN demo</h4>
+<p>The header of Flux website is animated using patterns produced by a neural network consisting of Dense layers with tanh functions. The x and y coordinates of each point on the pattern is cast into a range of -0.5 to 0.5. The pattern is produced by querying a neural network to get the opacity at each pixel. The input for this query is <code>(x, y, r, z1, z2)</code> where <code>r = sqrt(x^2 + y^2)</code>, and <code>[z1, z2]</code> form a latent vector for the neural network. An animation is produced by varying z bit by bit.
+</p>
+<h5>Code</h5>
+<ul>
+	<a href="https://github.com/FluxML/fluxml.github.io/pull/9"><li>fluxml.github.io#9 (merged)</li></a>
+	<a href="https://github.com/FluxML/model-zoo/pull/40"><li>model-zoo#40 (unmerged)</li></a>
+</ul>
+</article>
+
+
+<article>
+<h4>Go demo</h4>
+<p>Go is an Ancient Chinese game with a huge search space. A tree search on all the possible moves of this game is not feasible (complexity). AlphaGo is an algorithm that achieves a good performance in this game through a guided tree search. The tree search is guided by a neural net which predicts the value of the current state and the probabilities of transitioning to other states.</p>
+
+<h5>Code</h5>
+<ul>
+	<a href="https://github.com/FluxML/fluxml.github.io/pull/15"><li>fluxml.github.io#15 (merged)</li></ul></a>
+</article>
+
+
+<article>
+<h4>Cartpole demo</h4>
+<p>Cartpole is a game where a pole is balanced on a cart by applying forces from the left and right. The model for this demo receives the x position and velocity of the cart  and the angle and angular velocity of the pole as inputs, to predict the next direction to move in. The game is over when the pole is beyond a certain angle or when the cart touches the end of the screen. The model is a Deep Q-Network that provides the value of each action given the state.</p>
+
+<h5>Code</h5>
+<ul>
+	<a href="https://github.com/FluxML/fluxml.github.io/pull/6"><li> fluxml.github.io#6 (merged)</li></a></ul>
+</article>
+
+
+<article>
+<h4>MNIST demo</h4>
+<p>The MNIST data is used to train a model to recognise handwritten digits. The model uses convolutional layers, maxpool and a dense layer. It has an accuracy of 96%. </p>
+
+<h5>Code</h5>
+<ul>
+	<a href="https://github.com/FluxML/fluxml.github.io/pull/11"><li> fluxml.github.io#11 (merged)</li></a></ul>
+</article>
+
+
+<article>
+<h4>Fast Style Transfer demo</h4>
+<p>Style Transfer is the method of transferring the style of one image (the style image) to another ( the content image) to produce a stylised image (initialised to noise). This is done by passing the images through a few layers of a pre-trained network like VGG to produce representations of the three images and then minimising the error given by the style loss function and the content loss function. This process takes a while, hence an Image Transformation Network (ITN) is developed to transfer the style from a specific style image to any content image. The website showcases three ITNs.</p>
+
+<h5>Code</h5>
+<ul>
+	<a href="https://github.com/FluxML/fluxml.github.io/pull/22"><li> fluxml.github.io#22 (merged)</li></a></ul>
+</article>
+
+
+<article>
+<h4>Pong</h4>
+<p>The model used in this demo can play the atari game pong which is based on the classic game ping-pong.  The model uses a Dueling Deep Q-Network. The difference from a DQN is that the updates are made on a copy of the model during the replay. The model is set to the updated model only after a large number of steps.</p>
+
+<h5>Code</h5>
+<ul>
+	<a href="https://github.com/FluxML/fluxml.github.io/pull/21"><li> fluxml.github.io#21 (unmerged)</li></a></ul>
+</article>
+<br>
+
+<h3 id="b">FluxJS Features</h3>
+<article>
+<p>Features added to FluxJS include support for Conv layer, maxpool, recurrent cells ( LSTM, GRU ) and BatchNorm. Tests on a browser environment for each of the primitives were added as well.</p>
+
+<h5>Code</h5>
+<ul>
+<a href="https://github.com/FluxML/FluxJS.jl/pull/19"><li>Conv (merged)</li></a>
+<a href="https://github.com/FluxML/FluxJS.jl/pull/20 "><li>Maxpool (merged)</li></a>
+<a href="https://github.com/FluxML/FluxJS.jl/pull/24"><li>LSTM, GRU and BatchNorm (merged)</li></a>
+<a href="https://github.com/FluxML/FluxJS.jl/pull/26"><li>Tests (merged)</li></a>
+</ul>
+</article>
+<br>
+
+<h3 id="b">The End?</h3>
+<p>I would like to thank my mentors Mike Innes and Jane Herriman, other gsoc students, Tejan and Avik, and the wonderful julia community for the support and help. GSoC is ending, but I hope this is just the beginning :)</p>
+
+<div class="images">
+	<ul>
+		<li><img src="../../assets/images/gsoc.png"></li>
+		<li><img src="../../assets/images/numfocus.png"></li>
+		<li><img src="../../assets/images/julia.png"></li>
+		<li><img src="../../assets/images/flux.png"></li>
+	</ul>
+</div>
+

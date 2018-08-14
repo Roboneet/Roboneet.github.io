@@ -29,6 +29,17 @@
       link: https://github.com/Roboneet/fluxml.github.io/tree/lstm
     - name: Added a model to pong 
       link: https://github.com/Roboneet/fluxml.github.io/commit/c3dc0de2742b81438bd7d62798fe93d69789bad9
-
+5:
+  name: Summary of GSoC Week 9 and 10
+  points:
+    - name: Added Go Model to fluxml.ai
+    - name: Fixed load error of FastStyleTransfer.jl models with new Flux.jl design
+    - name: Front-end for char-rnn model
+6:
+  name: Summary of GSoC Week 11 and 12
+  points:
+    - name: Fixed errors with Pong environment
+    - name: Added a Style Transfer demo to fluxml.ai
+    - name: Added tests to FluxJS.jl
 
 
