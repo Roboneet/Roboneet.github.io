@@ -3,13 +3,16 @@ layout: default
 ---
 
 <style>
+	*{
+		text-align: justify;
+	}
 	h4{
-		text-decoration: underline;
+		/*text-decoration: underline;*/
 	}
 	h3{
 	    padding: 20px 0;
-	    box-shadow: 0 3px 0px #ddd;
-	    border-bottom: 2px solid #777;
+	    /* box-shadow: 0 3px 0px #ddd; */
+	    border-bottom: 1px solid #89aba3;
 	    position: relative;
 	}
 	h3:before{
@@ -17,18 +20,19 @@ layout: default
 	    position: absolute;
 	    width: 0;
 	    height: 0;
-	    border: 4px solid #777;
+	    border: 3px solid #8cada5;
 	    border-radius: 50%;
-	    bottom: -2px;
-	    right: -4px;
+	    bottom: -3px;
+	    right: -3px;
 	}
 	code{
 		background: #f3f3f3;
-	    padding: 5px;
+	    padding: 3px 5px;
 	    border-radius: 3px;
 	}
-	a{
-		font-weight: 600;
+	.report a{
+		font-weight: 400;
+		text-decoration: underline;
 	}
 
 	.images ul{
@@ -48,7 +52,7 @@ layout: default
 		width: 100px;
 	}
 </style>
-
+<div class="report">
 <h2>Final Report</h2>
 <p>
 This is the report about my GSOC project done during the summer of 2018. My project was to set up interactive machine learning demos of Flux.jl on a webpage. This is done in 3 steps:
@@ -80,7 +84,8 @@ The models implemented are put up on <a href="http://fluxml.ai/">the Flux websit
 
 <h5>Code</h5>
 <ul>
-	<a href="https://github.com/FluxML/fluxml.github.io/pull/15"><li>fluxml.github.io#15 (merged)</li></ul></a>
+	<a href="https://github.com/FluxML/fluxml.github.io/pull/15"><li>fluxml.github.io#15 (merged)</li></a>
+</ul>
 </article>
 
 
@@ -139,7 +144,7 @@ The models implemented are put up on <a href="http://fluxml.ai/">the Flux websit
 <br>
 
 <h3 id="b">The End?</h3>
-<p>I would like to thank my mentors Mike Innes and Jane Herriman, other gsoc students, Tejan and Avik, and the wonderful julia community for the support and help. GSoC is ending, but I hope this is just the beginning :)</p>
+<p>I would like to thank my mentors <a href="https://github.com/MikeInnes">@Mike Innes</a> and <a href="https://github.com/xorJane">@Jane Herriman</a>, other gsoc students, <a href="https://github.com/tejank10">@Tejan Karmali</a> and <a href="https://github.com/avik-pal/">@Avik Pal</a>, and <a href="https://julialang.org/community/">the wonderful julia community</a> for the support and help. Special thanks to <a href="https://julialang.org/">The Julia Project</a> and <a href="https://numfocus.org/">NumFocus</a> for facilitating my travel and giving me a chance to present a <a href="../../assets/posters/juliacon.pdf">poster</a> at <a href="http://juliacon.org/2018/">Juliacon 2018</a>. GSoC is ending, but I hope this is just the beginning :)</p>
 
 <div class="images">
 	<ul>
@@ -150,3 +155,4 @@ The models implemented are put up on <a href="http://fluxml.ai/">the Flux websit
 	</ul>
 </div>
 
+</div>

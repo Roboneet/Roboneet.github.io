@@ -1,18 +1,19 @@
 
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700i');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400');
 body{
 	overflow:auto;
 	font-family:"Lato", sans-serif;
-	background: #616161;
-	color: #111;	
+	background: #283f51;
+	color: #5d7979;	
+	font-weight: 300;
 }
 section{
 	max-width: 700px;
 	padding: 50px;
 	margin: 100px auto;
-	background: #fafafa;
+	background: #fff;
 	border-radius: 3px;
-	background: linear-gradient(to bottom right, #eee, #fff, #fbfbfb);
+	/*background: linear-gradient(to bottom right, #eee, #fff, #fbfbfb);*/
 	position:relative;
 	box-shadow: 5px 5px 2px #353535;
 }
@@ -25,7 +26,7 @@ section::before, section::after{
     width: 0;
     height: 0;
     border-width: 25px;
-    border-color: #000;
+    border-color: #495f5f;
     border-style: solid;
     /* border-radius: 5px; */
     /*border-top-color: #e65959;
@@ -48,8 +49,8 @@ section:hover:before{
 
 section::after{
 	border-color: transparent;
-    border-top-color: #616161;
-    border-left-color: #616161;
+    border-top-color: #283f51;
+    border-left-color: #283f51;
     top: -5px;
     border-width: 30px;
     left: -5px;
@@ -57,13 +58,11 @@ section::after{
 
 
 h1{
-	color: #111111;
 	font-variant: small-caps;
 	padding-bottom: 25px;
-	border-bottom: 1px solid #777;
+	border-bottom: 1px solid #5d7979;
 }
 p{
-	color: #111111;
 	letter-spacing: -0.009em;
 	padding-top: 30px;
 }

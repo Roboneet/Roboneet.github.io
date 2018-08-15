@@ -4,7 +4,6 @@ nav{
 	    -ms-flex-direction: row;
 	        flex-direction: row;
 	justify-content: flex-end;
-	color: #111;
 	list-style: none;
 }
 
