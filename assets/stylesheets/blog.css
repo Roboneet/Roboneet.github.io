@@ -6,3 +6,10 @@ a{
 p{
 	padding-top: 0;
 }
+
+.blog-list{
+	padding:0;
+}
+h3{
+	font-weight: 300;
+}

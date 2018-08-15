@@ -3,7 +3,9 @@
 body{
 	overflow:auto;
 	font-family:"Lato", sans-serif;
-	background: #283f51;
+	font-size: 16px;
+	line-height: 22px;
+	background: #3d576b;
 	color: #5d7979;	
 	font-weight: 300;
 }
@@ -26,7 +28,7 @@ section::before, section::after{
     width: 0;
     height: 0;
     border-width: 25px;
-    border-color: #495f5f;
+    border-color: #5c7575;
     border-style: solid;
     /* border-radius: 5px; */
     /*border-top-color: #e65959;
@@ -49,8 +51,8 @@ section:hover:before{
 
 section::after{
 	border-color: transparent;
-    border-top-color: #283f51;
-    border-left-color: #283f51;
+    border-top-color: #3d576b;
+    border-left-color: #3d576b;
     top: -5px;
     border-width: 30px;
     left: -5px;
