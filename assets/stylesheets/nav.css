@@ -10,3 +10,10 @@ nav{
 .active{
 	color: #999;
 }
+
+nav li{
+	padding: 5px 10px;
+    /*border: 1px solid #5d7979;*/
+    border-radius: 3px;
+    background: #f1f1f1;
+}

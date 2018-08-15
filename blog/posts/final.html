@@ -35,6 +35,10 @@ layout: default
 		text-decoration: underline;
 	}
 
+	.report{
+		padding-bottom: 50px;
+	}
+
 	.images ul{
 		display: flex;
 	    justify-content: center;
@@ -52,7 +56,7 @@ layout: default
 		width: 100px;
 	}
 </style>
-<div class="report">
+<div class="report content">
 <h2>Final Report</h2>
 <p>
 This is the report about my GSOC project done during the summer of 2018. My project was to set up interactive machine learning demos of Flux.jl on a webpage. This is done in 3 steps:
@@ -67,20 +71,8 @@ The models implemented are put up on <a href="http://fluxml.ai/">the Flux websit
 <h3 id="a">Web Demos for Flux</h3>
 
 <article>
-<h4>CPPN demo</h4>
-<p>The header of Flux website is animated using patterns produced by a neural network consisting of Dense layers with tanh functions. The x and y coordinates of each point on the pattern is cast into a range of -0.5 to 0.5. The pattern is produced by querying a neural network to get the opacity at each pixel. The input for this query is <code>(x, y, r, z1, z2)</code> where <code>r = sqrt(x^2 + y^2)</code>, and <code>[z1, z2]</code> form a latent vector for the neural network. An animation is produced by varying z bit by bit.
-</p>
-<h5>Code</h5>
-<ul>
-	<a href="https://github.com/FluxML/fluxml.github.io/pull/9"><li>fluxml.github.io#9 (merged)</li></a>
-	<a href="https://github.com/FluxML/model-zoo/pull/40"><li>model-zoo#40 (unmerged)</li></a>
-</ul>
-</article>
-
-
-<article>
 <h4>Go demo</h4>
-<p>Go is an Ancient Chinese game with a huge search space. A tree search on all the possible moves of this game is not feasible (complexity). AlphaGo is an algorithm that achieves a good performance in this game through a guided tree search. The tree search is guided by a neural net which predicts the value of the current state and the probabilities of transitioning to other states.</p>
+<p>Go is an Ancient Chinese game with a huge search space. A tree search on all the possible moves of this game is not feasible (<a href="https://en.wikipedia.org/wiki/Go_and_mathematics#Legal_positions">complexity</a>). AlphaGo is an algorithm that achieves a good performance in this game through a guided tree search. The tree search is guided by a neural net which predicts the value of the current state and the probabilities of transitioning to other states.</p>
 
 <h5>Code</h5>
 <ul>
@@ -108,6 +100,16 @@ The models implemented are put up on <a href="http://fluxml.ai/">the Flux websit
 	<a href="https://github.com/FluxML/fluxml.github.io/pull/11"><li> fluxml.github.io#11 (merged)</li></a></ul>
 </article>
 
+<article>
+<h4>CPPN demo</h4>
+<p>The header of Flux website is animated using patterns produced by a neural network consisting of Dense layers with tanh functions. The x and y coordinates of each point on the pattern is cast into a range of -0.5 to 0.5. The pattern is produced by querying a neural network to get the opacity at each pixel. The input for this query is <code>(x, y, r, z1, z2)</code> where <code>r = sqrt(x^2 + y^2)</code>, and <code>[z1, z2]</code> form a latent vector for the neural network. An animation is produced by varying z bit by bit.
+</p>
+<h5>Code</h5>
+<ul>
+	<a href="https://github.com/FluxML/fluxml.github.io/pull/9"><li>fluxml.github.io#9 (merged)</li></a>
+	<a href="https://github.com/FluxML/model-zoo/pull/40"><li>model-zoo#40 (unmerged)</li></a>
+</ul>
+</article>
 
 <article>
 <h4>Fast Style Transfer demo</h4>
@@ -121,7 +123,7 @@ The models implemented are put up on <a href="http://fluxml.ai/">the Flux websit
 
 <article>
 <h4>Pong</h4>
-<p>The model used in this demo can play the atari game pong which is based on the classic game ping-pong.  The model uses a Dueling Deep Q-Network. The difference from a DQN is that the updates are made on a copy of the model during the replay. The model is set to the updated model only after a large number of steps.</p>
+<p>The model used in this demo can play the atari game pong which is based on the classic game ping-pong.  The model uses a Dueling Deep Q-Network. The difference from a DQN is that the updates are made on a copy of the model. The model is set to the updated model only after a large number of steps.</p>
 
 <h5>Code</h5>
 <ul>
