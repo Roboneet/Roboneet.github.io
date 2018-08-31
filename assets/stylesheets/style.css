@@ -5,7 +5,7 @@ body{
 	font-family:"Lato", sans-serif;
 	font-size: 16px;
 	line-height: 22px;
-	background: #3d576b;
+	background: #fff;
 	color: #5d7979;	
 	font-weight: 300;
 }
@@ -20,7 +20,7 @@ section{
 	/*box-shadow: 5px 5px 2px #353535;*/
 }
 section::before, section::after{
-	content: "";
+	/*content: "";*/
     position: absolute;
     top: 0;
     left: 0;
@@ -67,8 +67,9 @@ h1{
 	padding-bottom: 25px;
 	/*border-bottom: 1px solid #5d7979;*/
 	padding: 75px 50px 50px;
-	background: linear-gradient(to top left, #ebf3ad, #9fe2aa);
+	/*background: linear-gradient(to top left, #ebf3ad, #9fe2aa);*/
     border-top-right-radius: 3px;
+    margin:0;
 }
 p{
 	letter-spacing: -0.009em;
