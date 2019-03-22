@@ -10,17 +10,19 @@
 	<link rel="stylesheet" href="/assets/stylesheets/blog.css">
 </head>
 <body>
-	<section>
-		<div class="heading">
-			<a href="/"><h1>Neethu Mariya Joy</h1></a>
-			<nav>
-				<a href="/blog" class="{% if page.title == 'Blog'%}active{% endif %}"
-				><li>Blog</li></a>
-			</nav>
-		</div>
+	<div id="main">
+		<section>
+			<div class="heading">
+				<a href="/"><h1>Neethu Mariya Joy</h1></a>
+				<nav>
+					<a href="/blog" class="{% if page.title == 'Blog'%}active{% endif %}"
+					><li>Blog</li></a>
+				</nav>
+			</div>
 
-		{{ content }}
-	 </section>
+			{{ content }}
+		 </section>
+	</div>
     <!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118279343-1"></script>
 	<script>

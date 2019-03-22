@@ -4,6 +4,15 @@ title: Home
 layout: default
 
 ---
+<style>
+	section{
+		transform-style: preserve-3d;
+	    perspective: 600px;
+	    transform: rotate3d(0, 0, 0, 5deg);
+	    transform-origin: center center;
+	    transition: all 0.7s ease-out 0s;
+	}
+</style>
 <div class="content">
 	<link rel="stylesheet" href="/assets/stylesheets/home.css">
 		<p>I’m a 3rd year undergraduate CS student at BITS Pilani, Pilani, India. I’m exploring software-defined networks, computer graphics and high performance computing. I’m a contributor to open-source Julia packages.<br>
@@ -25,10 +34,10 @@ layout: default
 			<li>
 				<a href="https://www.linkedin.com/in/roboneet/">LinkedIn</a>
 			</li>
-			<li>.</li>
-			<li>
+			<!-- <li>.</li> -->
+			<!-- <li>
 				<a href="https://www.researchgate.net/profile/Neethu_Mariya_Joy">ResearchGate</a>
-			</li>
+			</li> -->
 			<!-- <li>.</li> -->
 			<!-- <li><div class="things">Things I play with</div></li> -->
 		</ul>
@@ -39,5 +48,19 @@ layout: default
 	// document.querySelector(".things").addEventListener(event => {
 
 	// })
-
+	window.onload = () =>{
+		var container = document.getElementById("main");
+		var card = container.querySelector("section");
+		container.addEventListener("mousemove", function(event){
+		    console.log(event.offsetX, event.offsetY)
+		    console.log(event.offsetX/container.offsetWidth, event.offsetY/container.offsetHeight);
+			var dx = event.offsetX/container.offsetWidth - 0.5;
+			var dy = event.offsetY/container.offsetHeight - 0.5;
+			console.log(dx, dy);
+			card.style.transform = "rotate3d(" + -dy + "," + dx + ", 0, 10deg)";
+		})
+		container.addEventListener("mouseleave", function(){
+			card.style.transform = "rotate3d(0 , 0, 0, 10deg)";	
+		})
+	}
 </script>
