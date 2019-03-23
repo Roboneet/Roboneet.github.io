@@ -57,7 +57,7 @@ layout: default
 			var dx = event.offsetX/container.offsetWidth - 0.5;
 			var dy = event.offsetY/container.offsetHeight - 0.5;
 			console.log(dx, dy);
-			card.style.transform = "rotate3d(" + -dy + "," + dx + ", 0, 10deg)";
+			card.style.transform = "rotate3d(" + -dy + "," + dx + ", 0, 5deg)";
 		})
 		container.addEventListener("mouseleave", function(){
 			card.style.transform = "rotate3d(0 , 0, 0, 10deg)";	

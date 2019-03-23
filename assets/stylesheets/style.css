@@ -10,30 +10,25 @@ body{
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    /*align-items: center;*/
-    /*background: linear-gradient(to top left, #057245, #222);*/
     background: linear-gradient(to top left, #4f3c9c, #e74f4f);
 }
 
 #main{
 	margin-top: 50px;
 }
+
 section{
 	max-width: 950px;
-	/*height: 0;*/
 	flex: 1;
-	/*padding: 50px;*/
 	margin: 100px 100px;
 	background: #fff;
 	border-radius: 3px;
 	min-width: 950px;
-	/*background: linear-gradient(to bottom right, #eee, #fff, #fbfbfb);*/
 	position:relative;
-	/*box-shadow: 5px 5px 2px #999;*/
-	/*border-top: 10px solid #000; */
-	
 	transition: all .4s linear;
+	box-shadow: 0px 0px 10px #3e3e3e;
 }
+
 section::before, section::after{
 	/*content: "";*/
     position: absolute;
