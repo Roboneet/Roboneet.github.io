@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hello world!</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<style type="text/css">
+		body{
+			margin: 0;
+			padding:0;
+			font-family: 'Roboto', sans-serif;
+			font-weight: 600;
+			color: #333;
+		}
+		.box{		
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			/*background: #222;*/
+			border: 5px solid #333;
+		}
+		.box.a{
+			width: 100vw;
+			height: 100vh;
+			display: flex;
+			-webkit-flex-direction: column;
+			    -ms-flex-direction: column;
+			        flex-direction: column;
+		}
+		.box.b{
+			flex: 1;
+			display: flex;
+			transition: all .3s linear;
+			justify-content: space-around;
+		}
+		.box.c{
+			flex: 1;
+			background: #ccc;
+			transition: all .3s cubic-bezier(0.4, 0, 1, 1);
+		}
+		.box.d{
+			flex: .1;
+			background: #fff;
+		}
+		.box.c:hover,
+		.box.b:hover{
+			flex: 1.2;
+		}
+		.blog-link, .other-links{
+			cursor: pointer;
+			display: flex;
+			-webkit-justify-content: center;
+			        justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+		.blog-link > div{
+			font-size: 5rem;
+			text-transform: uppercase;
+			
+			color: #333;
+		}
+		.intro{
+			display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    font-size: 2rem;
+		    padding: 100px;
+		    font-weight: 100;
+		    /*text-align: justify;*/
+		    /*color: #fff;*/
+		}
+		.other-links {
+			flex-direction: row;
+		}
+		.other-links img{
+			width: 70px;
+			height: auto;
+		}
+		.other-links a{
+			margin: 20px;
+		}
+		@media only screen and (max-width: 768px){
+			.box.b{
+				flex-direction: column;
+			}
+			.box{
+				border-width: 0px;
+			}
+			.blog-link > div{
+				font-size: 2rem;
+			}
+			.intro{
+				font-size: 1rem;
+			}
+			.other-links img{
+				width: 50px;
+			}
+		}
+
+		.box.c{
+			background: #333;
+			
+		}
+		.box.c > *{
+			padding: 50px;
+			border-radius: 6px;
+		}
+		.box.d{
+			width: 20px;
+			height: 50px;
+			flex: none;
+			position: relative;
+		}
+		.box{
+			background: #333;
+		}
+	</style>
+</head>
+<body>
+	<div class="box a">
+		<div class="box b">
+			<div class="box d"></div>
+			<!-- <div class="box c"></div>
+			<div class="box c">
+				
+			</div>
+			<div class="box d"></div> -->
+			<div class="box c intro">
+					<p>Neethu Mariya Joy is a junior pursuing B.E Computer Science at BITS Pilani, India. I love creating things all day long.
+	( That's pretty much it. Thanks for stopping by ^_^ )</p>
+
+			</div>
+			<!-- <div class="box c"></div> -->
+		</div>
+		<div class="box b">
+			<div class="box c blog-link">
+				<div>BLOG</div>
+			</div>
+			<div class="box c other-links">
+				<a><img src="./github.png"></a>
+				<a><img src="./mail.png"></a>
+				<a><img src="./twitter.png"></a>
+
+			</div>
+			
+			<div class="box d"></div>
+		</div>
+	</div>
+	<script>
+		var colors = [
+			"#81c784",
+			"#b2fab4",
+			"#519657",
+			
+		]
+
+
+		var cboxes = document.querySelectorAll(".box.c");
+
+		cboxes.forEach((ele, i) => Array.from(ele.children).forEach(e => 
+			e.style.background = colors[i]));
+
+		var num = () => Math.random() - 0.5
+
+		document.querySelectorAll(".box.d").forEach(ele => {
+			console.log([ele])
+			var n  = (num() + 0.5)*ele.parentNode.offsetHeight;
+			console.log(ele, n)
+			ele.style.top = n + "px";
+		})
+
+		// function animate(){
+		// 	cboxes.forEach((ele, i) =>{
+		// 		var x = num()*50;
+		// 		var y = num()*50;
+		// 		ele.style.transform = "translate(" + x + "px, " + y + "px)";
+		// 	})
+		// 	setTimeout(animate, 350);
+		// }
+		// animate();
+	</script>
+</body>
+</html>
