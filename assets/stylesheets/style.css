@@ -15,12 +15,13 @@ body{
 
 #main{
 	margin-top: 50px;
+	height: fit-content;
 }
 
 section{
 	max-width: 950px;
 	flex: 1;
-	margin: 100px 100px;
+	margin: 50px;
 	background: #fff;
 	border-radius: 3px;
 	min-width: 950px;
