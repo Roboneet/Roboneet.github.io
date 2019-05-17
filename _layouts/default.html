@@ -3,26 +3,39 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,600,800&display=swap" rel="stylesheet">
 	<title>Neethu Mariya Joy | Student</title>
-	<link rel="stylesheet" href="/assets/stylesheets/style.css">
+	<!-- <link rel="stylesheet" href="/assets/stylesheets/style.css">
 	<link rel="stylesheet" href="/assets/stylesheets/nav.css">
-	<link rel="stylesheet" href="/assets/stylesheets/blog.css">
+	<link rel="stylesheet" href="/assets/stylesheets/blog.css"> -->
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			font-family: "Montserrat", sans-serif;
+			/*font-weight: 300;*/
+		}
+		body{
+			display: flex;
+			justify-content: center;
+			flex-direction: row;
+			width: 100vw;
+			min-height: 100vh;
+		}
+		#main{
+			flex: 1;
+			min-height: 100vh;
+			/*background: #fafafa;*/
+		}
+	</style>
 </head>
 <body>
-	<div id="main">
-		<section>
-			<div class="heading">
-				<a href="/"><h1>Neethu Mariya Joy</h1></a>
-				<nav>
-					<a href="/blog" class="{% if page.title == 'Blog'%}active{% endif %}"
-					><li>Blog</li></a>
-				</nav>
-			</div>
 
-			{{ content }}
-		 </section>
+	<!-- {% include navigation.html %} -->
+	<div id="main">
+		{{ content }}
 	</div>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118279343-1"></script>
 	<script>
