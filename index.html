@@ -1,84 +1,62 @@
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Neethu Mariya Joy</title>
+	<link href="https://meyerweb.com/eric/tools/css/reset/reset.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@700&display=swap" rel="stylesheet">
+	<style type="text/css">
+		*{
+			font-family: 'Fira Mono', monospace !important;
+			font-weight: 700 !important;
+		}
 
-title: Home
-layout: default
+		a:link, a:visited{
+			text-decoration: inherit;
+			color: inherit;
+		}
 
----
+		body{
+			display: flex;
+			justify-content: center;
+			width: 100vw;
+			height: 100vh;
+			align-items: center;
+			text-align: center
+		}
 
-<div class="cont" data-visible="false" id="fun_fact">
-	<div>
-		<h2>Fun Fact</h2>
-		<p>My username is "Roboneet" on most websites/systems. Here's a not-so-short story about the name. The name was coined by two geeky friends (<a href="https://www.facebook.com/BasilArackal">this geek</a> and <a href="https://www.facebook.com/SpaceLadyAnn">this geek</a>) when I was in highschool. It goes with a tag line "A bot designed to smile 24x7!", because I never really talked but smiled all the time... No, I don't smile when I'm hungry :P</p>
+		.handle{
+			font-size: 4em;
+		}
+		.hey{
+			margin: 10px 0;
+			font-size: 1.2em;
+		}
+
+		.list{
+			margin-top: 40px;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="handle"><a href="https://github.com/Roboneet/">@roboneet</a></div>
+		<div class="hey">Hey, I'm Neethu Mariya Joy.</div>
+		<div class="contact">
+			<ul class="list">
+				<a href="https://github.com/roboneet" target="_blank"><li><span>github</span></li></a>
+				<li>.</li>
+				<a href="https://mail.google.com/mail/?view=cm&fs=1&to=neethumariyajoy@gmail.com" target="_blank"><li><span>gmail</span></li></a>
+				<li>.</li>
+				<a href="https://twitter.com/neethumariyajoy"><li><span>twitter</span></li></a>
+				<li>.</li>
+				<a href="https://www.linkedin.com/in/roboneet/"><li><span>linkedin</span></li></a>
+			</ul>
+		</div>
 	</div>
-</div>
-<div class="cont">
-	<a class="egg"></a>
-	<div class="row">
-		<h1>Neethu Mariya Joy</h1>
-	 </div>
-	<article class="row about">
-		<!-- <h2>About</h2> -->
-		I am a pre-final year student pursuing <span>B.E in Computer Science and Engineering at BITS Pilani</span>, Pilani, India. I love working on projects that teach me something new. I'm a contributor to open-source julialang packages. Recently, I've explored <span>compiler design</span>, <span>SDN</span>s and <span>differentiable programming</span>. I'm excited to explore more and push myself further.
-	 </article>
-	<article class="row media">
-		<ul class="list">
-			<a href="https://github.com/Roboneet" target="_blank"><li><span>GitHub</span></li></a>
-			<a href="https://mail.google.com/mail/?view=cm&fs=1&to=neethumariyajoy@gmail.com" target="_blank"><li><span>Gmail</span></li></a>
-			<a href="https://twitter.com/NeethuMariyaJoy"><li><span>Twitter</span></li></a>
-			<a href="https://www.linkedin.com/in/roboneet/"><li><span>LinkedIn</span></li></a>
-		 </ul>
-	 </article>
-	<article class="row lit">
-		<h2>Literature</h2>
-		<ul class="list">
-		<a href="https://fluxml.ai/2019/03/05/dp-vs-rl.html" target="_blank"><li><span>Reinforcement Learning vs. Differentiable Programming</span></li></a>
-		<a href="https://arxiv.org/abs/1811.01457" target="_blank"><li><span>Fashionable Modelling with Flux</span><br><span class="authors">Michael Innes, Elliot Saba, Keno Fischer, Dhairya Gandhi, Marco Concetto Rudilosso, Neethu Mariya Joy, Tejan Karmali, Avik Pal, Viral Shah</span></li></a>
-		<a href="./poster.html"><li><span>Taking Flux to the Web</span> (Juliacon'18)</li></a>
-		</ul>
-	 </article>
-	<!-- <article class="row wexp">
-		<h2>Work Experience</h2>
-		<ul class="list">
-			<li><span>Google Intern, 2019 (Summer, Upcoming)</span></li>
-			<li><span>Google Summer of Code, 2018</span>
-				<ul class="list">
-					<li>Deployed machine learning models such as AlphaGo, Style Transfer model, CPPN</li>
-					<li>Added features to Flux.jl to tensorflow.js compiler, FluxJS.jl</li>
-				 </ul>
-			 </li>
-			<li><span>Tamil Nadu E-governance Agency, 2018 (BITS Pilani PS 1)</span>
-				<ul class="list">
-					<li>Developed a web portal for museum ticket and theatre booking</li>
-					<li>Includes Admin Dashboard, Payment feature and Ticket generation</li>
-					<li>Used MERN stack</li>
-				 </ul>
-			 </li>
-		 </ul>
-	 </article> -->
-	<!-- <article class="row uni">
-		<h2>Activities at University</h2>
-		<ul>
-			<li>
-				<span>ACM-W and ACM student chapters</span>
-				<ul>
-					<li>I've developed and organised quizzing events during technical fests</li>
-					<li>I've served as the Vice Chair for ACM-W from Sept 2017 to Sept 2018 (Actively conducted recruitments, SIGs, hour of code and other sessions)</li>
-				 </ul>
-			 </li>
-			<li>
-				<span>Department of Visual Media (2016 - 2018)</span>
-				<ul>
-					<li>I've served as a front-end developer </li>
-				 </ul>
-			 </li>
-		 </ul>
-	 </article> -->
-</div>
-<script type="text/javascript">
-	var egg = document.querySelector(".egg");
-	var yolk = document.querySelector("#fun_fact");
-	egg.addEventListener("click", function(){
-		var viz = eval(yolk.getAttribute("data-visible"));
-		yolk.setAttribute("data-visible", !viz);
-	})
-</script>
+</body>
+</html>
